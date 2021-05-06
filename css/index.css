@@ -1,15 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+
 /* Reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    /* overflow: hidden; */
 }
 
 section#landing{
-    height: 100vh;
     overflow: hidden;
+    height: 100vh;
     background:url('../img/bg.svg') no-repeat center center/cover;
+}
 
+#landing .fluid-container {
+    height: 100vh;
 }
 
 
@@ -17,12 +25,11 @@ section#landing{
 /* Landing image */
 
 #landing img {
-    width: 50%;
+    width: 100%;
     max-height: 100vh;
-    float: right;
 }
 
-@media(max-width: 760px) {
+/* @media(max-width: 760px) {
     #landing img {
         width: 75%;
     }
@@ -32,15 +39,15 @@ section#landing{
     #landing img {
         width: 100%;
     }
-}
+} */
 
 /* Main Heading */
 #main-heading, #typed-cursor {
     font-size: 5rem;
     color: coral;
-    position: relative;
+    /* position: relative;
     top: 60vh;
-    left: 50px;
+    left: 50px; */
 }
 
 #typed-cursor {
