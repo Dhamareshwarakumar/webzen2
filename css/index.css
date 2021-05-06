@@ -43,7 +43,7 @@ section#landing{
 
 /* Main Heading */
 #main-heading, #typed-cursor {
-    font-size: 5rem;
+    font-size: 4em;
     color: coral;
     /* position: relative;
     top: 60vh;
