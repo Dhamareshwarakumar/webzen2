@@ -1,67 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webzen 2.O</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link 
+        rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous"
+    > -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/materia_bootstrap.min.css">
     <link rel="stylesheet" href="./css/wickedcss.min.css">
     <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+    <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
+
     <style>
-        
+
     </style>
 </head>
+
 <body>
     <section id="landing">
         <div class="fluid-container">
             <div class="row d-lg-none" style="height: 15vh;"></div>
             <div class="row">
-                <div class="col-12 col-sm-8 col-md-8 col-lg-6 ml-auto">
-                    <img 
-                        src="./img/static_assets.svg" 
-                        class="floater" 
-                        alt="JS SVG"
-                    />
-                </div>
+                <div class="col-sm-4 col-lg-6"></div>
+                <div class="col-12 col-sm-8 col-md-8 col-lg-6">
+                    <img src="./img/static_assets.svg" class="floater" alt="JS SVG" />
+                </div> 1
             </div>
             <div class="row d-xl-none" style="height: 15vh;"></div>
             <div class="row mt-5">
                 <div class="col-1"></div>
                 <div class="col-12 col-md-8">
-                    <h1 
-                        id="main-heading" 
-                        style="display: inline;"
-                        class="display-4"
-                    ></h1>
+                    <h1 id="main-heading" style="display: inline;" class="display-4"></h1>
                     <span id="typed-cursor">|</span>
                 </div>
             </div>
         </div>
     </section>
+    <section id="details">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-4 mb-4">
+                    <div class="box" data-aos="zoom-in">
+                        <div class="d-flex justify-content-center">
+                            <span class="mt-5">
+                                <i class="fas fa-map-marker-alt fa-4x"></i>
+                            </span>
+                        </div>
+                        <h2 class="text-center text-light mt-4">Location</h2>
+                        <p class="text-light text-center">Online (Microsoft Teams)</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-4 mb-4">
+                    <div class="box" data-aos="zoom-in">
+                        <div class="d-flex justify-content-center">
+                            <span class="mt-5">
+                                <i class="fas fa-tasks fa-4x"></i>
+                            </span>
+                        </div>
+                        <h2 class="text-center text-light mt-4">Category</h2>
+                        <p class="text-light text-center">Full Stack Web Development</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-4 mb-4">
+                    <div class="box" data-aos="zoom-in">
+                        <div class="d-flex justify-content-center">
+                            <span class="mt-5">
+                                <i class="fas fa-calendar-alt fa-4x"></i>
+                            </span>
+                        </div>
+                        <h2 class="text-center text-light mt-4">Date</h2>
+                        <p class="text-light text-center">May 15, 16</p>
+                        <p class="text-light text-center">2021</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-4 mb-4">
+                    <div class="box" data-aos="zoom-in">
+                        <div class="d-flex justify-content-center">
+                            <span class="mt-5">
+                                <i class="fas fa-clock fa-4x"></i>
+                            </span>
+                        </div>
+                        <h2 class="text-center text-light mt-4">Time</h2>
+                        <p class="text-light text-center">10:00 - 12:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4 mb-5">
+            <div class="row">
+                <div class="col" id="desc">
+                    <h2 class="text-center mt-4">Description</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error a id vitae, libero neque
+                        dolore sed sunt perspiciatis ipsum ab esse molestias doloribus et quis veniam odio dolor
+                        laudantium.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="form" class="background">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="card bg-secondary mb-3 col-12 col-md-8 m-auto" style="opacity: 0.9;">
+                    <div class="card-body">
+                        <h1 class="card-title text-primary text-center display-4">Register Here</h1>
+                        <hr width="20%" size="3" class="m-auto rounded-circle">
+                        <form action="#" method="post" class="mt-4">
+                            <div class="form-group">
+                                <label for="acm-id" class="form-label mt-4">ACM ID(if you are an acm member)</label>
+                                <input type="text" class="form-control" name="acm-id" id="acm-id"
+                                    placeholder="Enter ACM ID">
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_no" class="form-label mt-4">University Registration Number</label>
+                                <input type="text" class="form-control" name="reg_no" id="reg_no"
+                                    placeholder="Enter JNTU Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="name" class="form-label mt-4">Name</label>
+                                <input type="text" class="form-control" name="name" id="name"
+                                    placeholder="Enter Full Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label mt-4">Email</label>
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="Enter Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="ph_no" class="form-label mt-4">Contact Number</label>
+                                <input type="text" class="form-control" name="ph_no" id="ph_no"
+                                    placeholder="Enter Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="college" class="form-label mt-4">College Name</label>
+                                <input type="text" class="form-control" name="college" id="college"
+                                    placeholder="Enter College Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="dept" class="form-label mt-4">Department</label>
+                                <select class="form-select" id="dept" name="dept">
+                                    <option>Computer Science and Engineering</option>
+                                    <option>Information Technology</option>
+                                    <option>Electronics and Communications Engineering</option>
+                                    <option>Electrical and Electronics Engineering</option>
+                                    <option>Civil Engineering</option>
+                                    <option>Mechanical Engineering</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
 
+
+                            <div class="form-group">
+                                <label for="section" class="form-label mt-4">Section</label>
+                                <select class="form-select" id="section" name="section">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                </select>
+                            </div>
+                            <fieldset class="form-group">
+                                <label for="gender" class="form-label mt-4">Gender</label>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="gender" id="male"
+                                            value="male" checked="">
+                                        Male
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="gender" id="female"
+                                            value="female">
+                                        Female
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <div class="form-group">
+                                <input type="hidden" name="event" id="event" value="">
+                            </div>
+                            <div class="row justify-content-center">
+                                <button type="submit" class="btn btn-primary mt-4" style="width: 60%;">
+                                    Lets Code
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script>
-              var typed3 = new Typed('#main-heading', {
-                strings: ['Webzen 1.0', 'Webzen 2.0'],
-                typeSpeed: 70,
-                backSpeed: 80,
-                smartBackspace: true, // this is a default
-                loop: true,
-                loopCount: 2,
-                showCursor: false
-            });
-    
-        </script>
+    <script>
+        var typed3 = new Typed('#main-heading', {
+            strings: ['Webzen 1.0', 'Webzen 2.0'],
+            typeSpeed: 70,
+            backSpeed: 80,
+            smartBackspace: true, // this is a default
+            loop: true,
+            loopCount: 2,
+            showCursor: false
+        });
+
+    </script>
 
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
 </body>
+
 </html>
