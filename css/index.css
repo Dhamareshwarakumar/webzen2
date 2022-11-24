@@ -4,21 +4,21 @@
 
 /* Reset */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    /* overflow: hidden; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  /* overflow: hidden; */
 }
 
-section#landing{
-    overflow: hidden;
-    height: 100vh;
-    background:url('../img/bg.svg') no-repeat center center/cover;
+section#landing {
+  overflow: hidden;
+  height: 100vh;
+  background: url('../img/bg.svg') no-repeat center center/cover;
 }
 
 #landing .fluid-container {
-    height: 100vh;
+  height: 100vh;
 }
 
 
@@ -26,8 +26,8 @@ section#landing{
 /* Landing image */
 
 #landing img {
-    width: 100%;
-    max-height: 100vh;
+  width: 100%;
+  max-height: 100vh;
 }
 
 /* @media(max-width: 760px) {
@@ -43,44 +43,49 @@ section#landing{
 } */
 
 /* Main Heading */
-#main-heading, #typed-cursor {
-    font-size: 4em;
-    color: coral;
-    /* position: relative;
+#main-heading,
+#typed-cursor {
+  font-size: 4em;
+  color: coral;
+  /* position: relative;
     top: 60vh;
     left: 50px; */
 }
 
 @media(min-width: 760px) {
-    #main-heading, #typed-cursor {
-        font-size: 6em;
-    }
+
+  #main-heading,
+  #typed-cursor {
+    font-size: 6em;
+  }
 }
 
 #typed-cursor {
-    opacity: 1;
-    animation: blink .7s infinite;
+  opacity: 1;
+  animation: blink .7s infinite;
 }
 
 @keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 hr {
-    color: coral;
+  color: coral;
 }
 
 /* Overriding Boostrap */
 .text-primary {
-    color: coral !important;
+  color: coral !important;
 }
 
 [contenteditable].form-control:focus,
@@ -95,7 +100,7 @@ input[type=password]:focus,
 input[type=text]:focus,
 textarea.form-control:focus,
 textarea:focus {
- box-shadow:inset 0 -2px 0 coral
+  box-shadow: inset 0 -2px 0 coral
 }
 
 
@@ -103,87 +108,99 @@ textarea:focus {
 /* Background */
 /* ============= Animation background ========= */
 .background {
-    background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
-    background-size: 400% 400%;
-    animation: Gradient 15s ease infinite;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding:0;
-    margin:0px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    box-shadow: linear-gradient(132deg, #FC415A, #591BC5, #212335);
-  }
-  .cube {
-    position: absolute;
-    top: 80vh;
-    left: 45vw;
-    width: 10px;
-    height: 10px;
-    border: solid 1px #D7D4E4;
-    transform-origin: top left;
-    transform: scale(0) rotate(0deg) translate(-50%, -50%);
-    animation: cube 12s ease-in forwards infinite;
-  }
-  .cube:nth-child(2n) {
-    border-color: #FFF ;
-  }
-  .cube:nth-child(2) {
-    animation-delay: 2s;
-    left: 25vw;
-    top: 40vh;
-  }
-  .cube:nth-child(3) {
-    animation-delay: 4s;
-    left: 75vw;
-    top: 50vh;
-  }
-  .cube:nth-child(4) {
-    animation-delay: 6s;
-    left: 90vw;
-    top: 10vh;
-  }
-  .cube:nth-child(5) {
-    animation-delay: 8s;
-    left: 10vw;
-    top: 85vh;
-  }
-  .cube:nth-child(6) {
-    animation-delay: 10s;
-    left: 50vw;
-    top: 10vh;
-  }
-  .cube:nth-child(7) {
-    animation-delay: 12s;
-    left: 90vw;
-    top: 90vh;
-  }
-  
-  /* Animate Background*/
-  @keyframes Gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  @keyframes cube {
-    from {
-      transform: scale(0) rotate(0deg) translate(-50%, -50%);
-      opacity: 1;
-    }
-    to {
-      transform: scale(20) rotate(960deg) translate(-50%, -50%);
-      opacity: 0;
-    }
+  background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+}
+
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #D7D4E4;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 12s ease-in forwards infinite;
+}
+
+.cube:nth-child(2n) {
+  border-color: #FFF;
+}
+
+.cube:nth-child(2) {
+  animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+
+.cube:nth-child(3) {
+  animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+
+.cube:nth-child(4) {
+  animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+
+.cube:nth-child(5) {
+  animation-delay: 8s;
+  left: 10vw;
+  top: 85vh;
+}
+
+.cube:nth-child(6) {
+  animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+
+.cube:nth-child(7) {
+  animation-delay: 12s;
+  left: 90vw;
+  top: 90vh;
+}
+
+/* Animate Background*/
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
   }
 
-  /* Boxes */
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+/* Boxes */
 
 
 
@@ -192,8 +209,8 @@ textarea:focus {
   height: 333px;
   padding: 0 20px;
   width: 100%;
-  background:#f09;
-  background-image:linear-gradient(45deg, #3023AE 0%, #f09 100%);
+  background: #f09;
+  background-image: linear-gradient(45deg, #3023AE 0%, #f09 100%);
   /* box-shadow:-10vmin 10vmin 0 rgba(255,255,255,0.07) */
 }
 
@@ -203,7 +220,7 @@ textarea:focus {
 }
 
 #desc {
-  height: 200px;
+  height: 300px;
   border: 2px solid #333;
   /* border-radius: 555px 25px 15px 25px/ 25px 5px 35px 555px; */
   border-top-left-radius: 555px 25px;
@@ -212,7 +229,15 @@ textarea:focus {
   border-bottom-left-radius: 25px 555px;
 }
 
-#desc h2, #desc p {
+
+@media(max-width: 768px) {
+  #desc {
+    height: 400px;
+  }
+}
+
+#desc h2,
+#desc p {
   font-family: 'Neucha', cursive;
   line-height: 1.5;
 }

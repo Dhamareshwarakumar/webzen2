@@ -5,26 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webzen 2 is a Javascript workshop offered by ACM Student Chapter, GMRIT">
+    <meta name="author" content="Dhamareshwarakumar Gandikota">
     <title>Webzen 2.O</title>
 
-    <!-- <link 
-        rel="stylesheet" 
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
-        crossorigin="anonymous"
-    > -->
+    <link rel="icon" href="./img/acm.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/materia_bootstrap.min.css">
     <link rel="stylesheet" href="./css/wickedcss.min.css">
     <link rel="stylesheet" href="./css/index.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
     <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
-
-    <style>
-
-    </style>
 </head>
 
 <body>
@@ -92,18 +84,24 @@
                             </span>
                         </div>
                         <h2 class="text-center text-light mt-4">Time</h2>
-                        <p class="text-light text-center">10:00 - 12:00</p>
+                        <p class="text-light text-center">Sat :: 10:00 - 12:00</p>
+                        <p class="text-light text-center">Sun :: 14:00 - 16:00</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container mt-4 mb-5">
             <div class="row">
-                <div class="col" id="desc">
+                <div class="container" id="desc">
                     <h2 class="text-center mt-4">Description</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error a id vitae, libero neque
-                        dolore sed sunt perspiciatis ipsum ab esse molestias doloribus et quis veniam odio dolor
-                        laudantium.</p>
+                    <p>GMRIT ACM STUDENT CHAPTER is back with Webzen 2.0. This time we're gonna have an interactive &
+                        essential session on JavaScript. You've learned how to create a basic webpage & how to make it
+                        beautiful in Webzen 1.0. Now it's time to add attitude & rules to those webpages. You people
+                        will do that using JavaScript. A step-by-step approach will be taught to make you understand the
+                        syntaxes, functionality and their implementation.</p>
+                    <p class="text-center">Style is HTML</p>
+                    <p class="text-center">Fashion is CSS</p>
+                    <p class="text-center">Attitude is <i>Javascript</i></p>
                 </div>
             </div>
         </div>
@@ -122,12 +120,12 @@
                     <div class="card-body">
                         <h1 class="card-title text-primary text-center display-4">Register Here</h1>
                         <hr width="20%" size="3" class="m-auto rounded-circle">
-                        <form action="#" method="post" class="mt-4">
-                            <div class="form-group">
-                                <label for="acm-id" class="form-label mt-4">ACM ID(if you are an acm member)</label>
-                                <input type="text" class="form-control" name="acm-id" id="acm-id"
+                        <form action="submit.php" method="post" class="mt-4">
+                            <!-- <div class="form-group">
+                                <label for="acm_id" class="form-label mt-4">ACM ID(if you are an acm member)</label>
+                                <input type="text" class="form-control" name="acm_id" id="acm_id"
                                     placeholder="Enter ACM ID">
-                            </div>
+                            </div> -->
                             <div class="form-group">
                                 <label for="reg_no" class="form-label mt-4">University Registration Number</label>
                                 <input type="text" class="form-control" name="reg_no" id="reg_no"
@@ -150,8 +148,19 @@
                             </div>
                             <div class="form-group">
                                 <label for="college" class="form-label mt-4">College Name</label>
-                                <input type="text" class="form-control" name="college" id="college"
+                                <input list="colleges" type="text" class="form-control" name="college" id="college"
                                     placeholder="Enter College Name">
+                                <datalist id="colleges">
+                                    <option value="GMR Institute of Technology">
+                                </datalist>
+                            </div>
+                            <div class="form-group">
+                                <label for="year" class="form-label mt-4">Year</label>
+                                <select class="form-select" id="year" name="year">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
                             </div>
                             <div class="form-group">
                                 <label for="dept" class="form-label mt-4">Department</label>
@@ -165,7 +174,6 @@
                                     <option>Other</option>
                                 </select>
                             </div>
-
 
                             <div class="form-group">
                                 <label for="section" class="form-label mt-4">Section</label>
@@ -193,7 +201,7 @@
                                 </div>
                             </fieldset>
                             <div class="form-group">
-                                <input type="hidden" name="event" id="event" value="">
+                                <input type="hidden" name="event" id="event" value="webzen2">
                             </div>
                             <div class="row justify-content-center">
                                 <button type="submit" class="btn btn-primary mt-4" style="width: 60%;">
@@ -218,13 +226,35 @@
             loopCount: 2,
             showCursor: false
         });
+    </script>
 
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        var url_string = window.location.href
+        var url = new URL(url_string);
+        var c = url.searchParams.get("signup");
+        var d = url.searchParams.get('error');
+
+        if (c == "success") {
+            Swal.fire({
+                icon: 'success',
+                title: 'You are Successfully Registered For Webzen'
+            })
+        }
+        if (d) {
+            Swal.fire({
+                icon: 'error',
+                title: d
+            })
+        }
     </script>
 
 
 
 
-
+    <script src="./js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
